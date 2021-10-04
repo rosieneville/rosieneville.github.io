@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+<head>
+<!-- the title goes in the browser bar.-->
+    <title> Rosie Neville DS website</title>
+  
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+<h1 class="web_name"> ROSIE NEVILLE DATA SCIENCE 2021 </h1>
+
+<!--Chart 1 -->
+  <h2 class="chart_head"> Week 1: Upload covid chart from Rapidcharts.io</h2>
+
+  <div class="chart" id="chart1">
+       <script>
+         var myChart1 = "chart1_covidUKRegions.json";
+         vegaEmbed('#chart1', myChart1);
+      </script>
+  </div>
+
+<!--Chart 2 -->
+  <h2 class="chart_head"> Week 1: Upload productivity chart from Rapidcharts.io</h2>
+
+  <div class="chart" id="chart2">
+        <script>
+         var myChart2 = "chart2_ukProductivity.json";
+         vegaEmbed('#chart2', myChart2;
+        </script>
+  </div>
+
+<!--Chart 3 -->
+  <h2 class="chart_head"> Week 1: Upload any other chart from Rapidcharts.io</h2>
+
+  <div class="chart" id="chart3">
+        <script>
+         var myChart3 = "chart3_ozoneEmissions.json";
+          vegaEmbed('#chart3', myChart3;
+        </script>
+  </div>
+  
+<!--Chart 4 -->
+  <h2 class="chart_head"> Week 1: Upload any other chart from Rapidcharts.io</h2>
+
+  <div class="chart" id="chart4">
+        <script>
+         var myChart4 = "chart4_ukmarco.json";
+         vegaEmbed('#chart4', myChart4;
+         </script>
+  </div>
+  
+<!--Chart 5 -->
+  <h2 class="chart_head"> Week 2: Upload a chart using an API</h2>
+
+  <div class="chart" id="chart5">
+        <script>
+         var myChart5 "chart5_myCovidChart(API).json";
+          vegaEmbed('#chart5', myChart5;
+         </script>
+  </div>
+
+
+</body>
+<!-- ///////////////////  END BODY //////////////////////////////////// -->
+
+</html>
