@@ -1,4 +1,3 @@
-var ChartI1 =
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
@@ -44,5 +43,4 @@ var ChartI1 =
       "axis": {"grid": false}
     }
   }
-};
-vegaEmbed('#ChartI1', ChartI1, {"actions": false});
+}
