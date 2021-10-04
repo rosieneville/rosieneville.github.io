@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Covid Chart (API method)",
+    "text": "Covid Chart",
     "subtitle": "new covid cases",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -43,5 +43,6 @@
       "title": null,
       "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
     }
-  }
+  },
+  "config": {}
 }
