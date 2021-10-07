@@ -75,10 +75,7 @@
       "title": null,
       "grid": false,
       "labelSeparation": 10,
-      "domainColor":"dimgrey",
-      "labelColor":"#00a767",
-      "tickColor":"pink",
-      "gridColor":"dimgrey"
+
     }},
 
   "y": {
@@ -87,10 +84,7 @@
     "title": "",
     "axis": {
       "grid": false,
-      "domainColor":"dimgrey",
-      "labelColor":"#00a767",
-      "tickColor":"pink",
-      "gridColor":"dimgrey",
+
       "format":"$,.5"}
       }
    }
