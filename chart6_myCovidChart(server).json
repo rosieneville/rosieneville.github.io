@@ -2,19 +2,19 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "Covid-19 new deaths",
-      "subtitle": "Sub-title here",
+      "subtitle": "",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
       "color": "black"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/myCovidData.csv",
+      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/myCovidData2.csv",
       "format": {"type": "csv"}
     },
     "transform": [
   
-      {"filter": {"field": "areaName", "oneOf": ["East Devon", "Bristol, City of", "Camden"]}}
+      {"filter": {"field": "areaName", "oneOf": ["East Devon", "Surrey Heath", "Camden"]}}
     ],
     "height": 300,
     "width": 310,
@@ -27,7 +27,7 @@
         "axis": {"grid": false}
       },
       "y": {
-        "field": "newDeaths28DaysByPublishDate",
+        "field": "newCasesBySpecimenDateChange",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
