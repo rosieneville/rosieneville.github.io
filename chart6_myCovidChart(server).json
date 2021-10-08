@@ -14,7 +14,7 @@
     },
     "transform": [
   
-      {"filter": {"field": "areaName", "oneOf": ["Barnet", "Bristol, City of", "Camden"]}}
+      {"filter": {"field": "areaName", "oneOf": ["East Devon", "Bristol, City of", "Camden"]}}
     ],
     "height": 300,
     "width": 310,
@@ -36,7 +36,7 @@
         "field": "areaName",
         "type": "nominal",
         "scale": {"scheme": "set1"},
-        "title": "LEGEND TITLE",
+        "title": "",
         "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
       }
     }
