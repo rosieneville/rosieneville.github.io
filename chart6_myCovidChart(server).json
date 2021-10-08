@@ -1,14 +1,14 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Covid Chart",
-    "subtitle": "new covid cases",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+"title": {
+    "text": "New Covid Cases",
+    "subtitle":"Comparing west London boroughs",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
-  "data": {
+  
+   "data": {
     "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/myCovidData.csv",
     "format": {"type": "csv"}
   },
@@ -43,6 +43,5 @@
       "title": null,
       "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
     }
-  },
-  "config": {}
+  }
 }
