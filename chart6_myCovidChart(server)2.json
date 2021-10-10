@@ -27,7 +27,7 @@
         "axis": {"grid": false}
       },
       "y": {
-        "field": "newCasesBySpecimenDateChange",
+        "field": "newCasesByPublishDateRollingRate",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
