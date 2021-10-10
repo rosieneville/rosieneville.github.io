@@ -1,48 +1,43 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Covid Chart",
-    "subtitle": "new covid cases",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
-  },
-  "data": {
-    "url":  "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/myCovidData2.csv",
-    "format": {"type": "csv"}
-  },
-  "transform": [
-    {
-      "filter": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Covid-19 new deaths",
+      "subtitle": "",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/myCovidData2.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+  
+      {"filter": {"field": "areaName", "oneOf": ["East Devon", "Surrey Heath", "Camden"]}}
+    ],
+    "height": 300,
+    "width": 310,
+    "mark": {"type": "line", "point": false},
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "newCasesByPublishDateRollingRate",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "color": {
         "field": "areaName",
-        "oneOf": ["Tunbridge Wells", "Leeds", "Cotswold"]
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": "",
+        "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
       }
     }
-  ],
-  "height": 310,
-  "width": 310,
-  "mark": {"type": "line", "point": false},
-  "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": null,
-      "axis": {"grid": false}
-    },
-    "y": {
-      "field": "newCasesByPublishDateRollingRate",
-      "type": "quantitative",
-      "title": null,
-      "axis": {"grid": false}
-    },
-    "color": {
-      "field": "areaName",
-      "type": "nominal",
-      "scale": {"scheme": "dark2"},
-      "title": null,
-      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
-    }
-  },
-  "config": {}
-}
+  }
