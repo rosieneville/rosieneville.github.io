@@ -30,7 +30,11 @@ p{
     color: rgb(5, 56, 107);
 }
 
-
+a{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(5, 56, 107);
+}
+    
 <! --
 .chart{
     width: 300px;
