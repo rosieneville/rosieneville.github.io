@@ -1,0 +1,41 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "",
+      "text": "Domains of Deprivation",
+      "subtitle":"NHS Bristol, North Somerset and South Gloucestershire CCG: English",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+  "data": {
+    "values": [
+      {"a": "IMD", "b": 8.7}, {"a": "Income", "b": 7.46}, {"a": "Employment", "b": 8.17},
+      {"a": "Education", "b": 11.19}, {"a": "Health", "b": 7.28}, {"a": "Crime", "b": 16.34}]
+  },
+  
+  "height": 300,
+  "width": 260,
+
+  "mark": {
+    "type": "bar",
+    "color": "#05386B"},
+
+"encoding": {
+     "x": {
+       "field": "a",
+       "type": "nominal",
+       "axis": {
+         "title": "domains of deprivation",
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
+      "y": {
+        "field": "b",
+        "type": "quantitative",
+        "title": "proportion of LSOAs in most deprived 10% nationally",
+        "axis": {"grid": false}}
+}
+}
