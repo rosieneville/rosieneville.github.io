@@ -15,7 +15,10 @@
     "color": "black"
   },
 
-
+"config": {
+  "background":"#EDF5E1",
+  "view": {
+    "stroke": "transparent"}},
 
   "height": 300,
   
