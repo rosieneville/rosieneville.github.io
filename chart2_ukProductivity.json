@@ -20,11 +20,11 @@
     "type": "line",
     "point": false,
     "interpolate": "monotone",
-    "color": "blueviolet"
+    "color": "red"
   },
   
   "config": {
-  "background":"#EDF5E1",
+  "background":"white",
   "view": {
     "stroke": "transparent"}},
   
