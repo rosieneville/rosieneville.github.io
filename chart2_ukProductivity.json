@@ -22,6 +22,12 @@
     "interpolate": "monotone",
     "color": "blueviolet"
   },
+  
+  "config": {
+  "background":"#EDF5E1",
+  "view": {
+    "stroke": "transparent"}},
+  
   "encoding": {
     "x": {
       "field": "Date",
