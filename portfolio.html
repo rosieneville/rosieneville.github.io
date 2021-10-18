@@ -97,8 +97,14 @@
 
     
 <!--Chart 6 -->
- <p>My sixth chart .</p>
-    
+ <p>My sixth chart plots the UK's debt-to-GDP ratio over time.</p>
+  <p>NB: all observations past January 2021 are incorrect (made up observations for coding pratice) </p>
+
+ <div class="chart" id="chart6">
+        <script>
+         var myChart6 = "chart6_debtgdp.json";
+         vegaEmbed('#chart6', myChart6);
+        </script>
     
 <!--Chart 7 -->
  <p>My seventh chart looks at the relative deprivation of the area covered by NHS Bristol, North Somerset and South Gloucestershire CCG using various domains of deprivation.</p>
