@@ -4,7 +4,7 @@
 "description": "LSOA IMD",
 
 "data": {
-    "url": "https://services3.arcgis.com/ivmBBrHfQfDnDf8Q/arcgis/rest/services/Indices_of_Multiple_Deprivation_(IMD)_2019/FeatureServer/0/query?where=lsoa11cd%20%3D%20%27E01000001%27%20OR%20lsoa11cd%20%3D%20%27E01000005%27%20OR%20lsoa11cd%20%3D%20%27E01014485%27%20OR%20lsoa11cd%20%3D%20%27E01029554%27&outFields=lsoa11cd,lsoa11nm,lsoa11nmw,IMD_Rank,IMD_Decile,IncRank,IncDec,EmpRank,EmpDec,EduRank,EduDec,LSOA01NM&outSR=4326&f=json",
+    "url": "https://services3.arcgis.com/ivmBBrHfQfDnDf8Q/arcgis/rest/services/Indices_of_Multiple_Deprivation_(IMD)_2019/FeatureServer/0/query?where=lsoa11cd%20%3D%20%27E01000001%27%20OR%20lsoa11cd%20%3D%20%27E01000005%27%20OR%20lsoa11cd%20%3D%20%27E01014485%27%20OR%20lsoa11cd%20%3D%20%27E01029554%27&outFields=lsoa11cd,lsoa11nm,IMD_Rank,LSOA01NM&outSR=4326&f=json",
     "format": {"type": "json"}
   },
 "mark": "point",
@@ -15,7 +15,10 @@
       "title": "LSOA"
     },
 
-    "y": {"field": "IMD_Decile", "type": "quantitative", "title": "IMD"}
-    
+    "y": {
+      "field": "IMD_Decile",
+      "type": "quantitative",
+      "title": "IMD"}
+
 }
 }
