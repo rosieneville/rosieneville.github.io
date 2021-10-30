@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+"description": "LSOA IMD",
+
+   "title": {
+    "text": "Real-time Crypto Current Exchange Rates",
+    "subtitle":"",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+"data": {
+    "url": "http://api.coinlayer.com/live?access_key=d8fc31da5d26800875eabb70b7c52be9",
+    "format": {
+      "type": "json",
+      "property": "rates"
+      }
+  },
+ "transform": [
+   {
+     "filter": "rates",
+     "OneOf": ["BTC", "ETH", "USDT", "ADA", "BNB", "XRP", "DOGE"]
+   }
+ ],
+
+"mark": "bar",
+ 
+
+"encoding": {
+    "x": {
+      "field": "rates",
+      "type": "quantitative",
+      "title": "LSOA"
+         },
+
+    "y": {
+      "field": "rates",
+      "type": "quantitative",
+      "title": "IMD"
+    }
+ 
+}
+}
