@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Health Expenditures per Capita ($)",
+      "subtitle": "(HLTHSCPCHCSA)",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/data_FRED-HLTHSCPCHCSA.json",
+      "format": {"type": "json", 
+      "property": "observations"}
+    },
+
+    "height": 300,
+    "width": 310,
+
+    "mark": {"type": "area", "point": false},
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "areaName",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": "",
+        "legend": null
+      }
+    }
+  }
