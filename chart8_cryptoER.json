@@ -15,13 +15,12 @@
 "data": {
     "url": "http://api.coinlayer.com/live?access_key=d8fc31da5d26800875eabb70b7c52be9",
     "format": {
-      "type": "json",
-      "property": "rates"
+      "type": "json"
       }
   },
  "transform": [
    {
-     "filter": "rates",
+     "filter": "[0].rates",
      "OneOf": ["BTC", "ETH", "USDT", "ADA", "BNB", "XRP", "DOGE"]
    }
  ],
@@ -31,15 +30,15 @@
 
 "encoding": {
     "x": {
-      "field": "rates",
-      "type": "quantitative",
-      "title": "LSOA"
+      "field": "?????",
+      "type": "nominal",
+      "title": "Crypto currencies"
          },
 
     "y": {
-      "field": "rates",
+      "field": "[0].rates",
       "type": "quantitative",
-      "title": "IMD"
+      "title": "Exchange Rate"
     }
  
 }
