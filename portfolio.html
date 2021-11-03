@@ -124,7 +124,38 @@
 <!--Chart 9 -->
  <p>My ninth chart .</p>
     
-<h2 class="chart_head"> Week 5: Use a loop to embed 4 different charts from the same API. </h2>    
+<h2 class="chart_head"> Week 5: Use a loop to embed 4 different charts from the same API. </h2>  
+<container class="bcontainer">
+       
+         <div class="chart" id="chart10">
+        <script>
+         var myChart10 = "chart10_disY_A229RX0.json";
+         vegaEmbed('#chart10', myChart10);
+        </script>
+  </div> 
+       
+         <div class="chart" id="chart11">
+        <script>
+         var myChart11 = "chart11_con_A794RX0Q048SBEA.json";
+         vegaEmbed('#chart11', myChart11);
+        </script>
+  </div> 
+       
+         <div class="chart" id="chart12">
+        <script>
+         var myChart12 = "chart12_rgdp_A939RX0Q048SBEA";
+         vegaEmbed('#chart12', myChart12);
+        </script>
+  </div>     
+       
+         <div class="chart" id="chart13">
+        <script>
+         var myChart13 = "chart13_healthcap_HLTHSCPCHCSA";
+         vegaEmbed('#chart13', myChart13);
+        </script>
+  </div>        
+  </container>     
+             
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
