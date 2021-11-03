@@ -36,7 +36,7 @@
         "type": "nominal",
         "scale": {"scheme": "set1"},
         "title": "",
-        "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+        "legend": null
       }
     }
   }
