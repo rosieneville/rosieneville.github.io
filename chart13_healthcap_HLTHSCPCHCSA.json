@@ -34,7 +34,7 @@
       "color": {
         "field": "areaName",
         "type": "nominal",
-        "scale": {"scheme": "set1"},
+        "scale": {"scheme": "purples"},
         "title": "",
         "legend": null
       }
