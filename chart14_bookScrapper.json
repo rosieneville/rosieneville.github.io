@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+      "text": "Bestsellers Prices",
+      "subtitle": "data scrapped from Blackwells's",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+},
+  "data":{
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/my_scapper_data.csv"
+  },
+
+
+"height": 300,
+"width": 310,
+
+ "mark": {
+   "type": "bar",
+   "color": "#DB5CA2"
+   },
+
+ "encoding": {
+      "x": {
+        "field": "Book",
+        "type": "nominal",
+        "title": null
+      },
+
+      "y": {
+        "field": "Price",
+        "type": "quantitative",
+        "title": null
+      }
+ }
+}
