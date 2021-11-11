@@ -23,15 +23,16 @@
         "type": "quantitative"
         },
 
-    "y": {"field": "NewReferrals",
-    "type": "quantitative"
+    "y": {
+        "field": "NewReferrals",
+        "type": "quantitative"
         },
     
     "color":{
         "field": "Year",
         "type": "nominal",
-        "scale": {"scheme": "set1"}
-          }
+        "scale": {"scheme": "blues"},
+        "legend": {"orient": "top-right"}
+        }
     }
 
-}
