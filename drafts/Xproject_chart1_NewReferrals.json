@@ -11,28 +11,33 @@
  },
 
 "data": { 
-    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/newPeriodCommissioner_total.csv}"
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/newPeriodCommissioner_total.csv}",
+    "format": {"type": "csv"}
 },
-
 
 "mark": {"type": "line"},
     
-"encoding":{
-    "x":{
+"encoding": {
+    "x": {
         "field": "MonthCode",
-        "type": "quantitative"
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
         },
 
     "y": {
         "field": "NewReferrals",
-        "type": "quantitative"
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
         },
     
     "color":{
         "field": "Year",
-        "type": "nominal",
-        "scale": {"scheme": "blues"},
+        "type": "ordinal",
+        "scale": {"scheme": "set1"},
         "legend": {"orient": "top-right"}
         }
     }
 
+}
