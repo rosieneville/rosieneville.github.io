@@ -1,0 +1,37 @@
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+ "title": {
+      "text": "New Referrals",
+      "subtitle": "Number of patients who started new care pathways",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+ },
+
+"data": { 
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/newPeriodCommissioner_total.csv}"
+},
+
+
+"mark": {"type": "line"},
+    
+"encoding":{
+    "x":{
+        "field": "MonthCode",
+        "type": "quantitative"
+        },
+
+    "y": {"field": "NewReferrals",
+    "type": "quantitative"
+        },
+    
+    "color":{
+        "field": "Year",
+        "type": "nominal",
+        "scale": {"scheme": "set1"}
+          }
+    }
+
+}
