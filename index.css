@@ -35,12 +35,13 @@ a{
     color: rgb(5, 56, 107);
 }
 
+<--
 .bcontainer {
     border-style: none;
     padding: 1px;
     gap: 10px 10px
   }
-
+-->
     
 .chart{
     width: 330px;
