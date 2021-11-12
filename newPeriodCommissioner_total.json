@@ -1,0 +1,457 @@
+[
+ {
+   "Date": "01apr2016",
+   "NewReferrals": 1583739,
+   "Year": 2016,
+   "Month": "Apr",
+   "MonthCode": 4
+ },
+ {
+   "Date": "01may2016",
+   "NewReferrals": 1550496,
+   "Year": 2016,
+   "Month": "May",
+   "MonthCode": 5
+ },
+ {
+   "Date": "01jun2016",
+   "NewReferrals": 1601725,
+   "Year": 2016,
+   "Month": "Jun",
+   "MonthCode": 6
+ },
+ {
+   "Date": "01jul2016",
+   "NewReferrals": 1532038,
+   "Year": 2016,
+   "Month": "Jul",
+   "MonthCode": 7
+ },
+ {
+   "Date": "01aug2016",
+   "NewReferrals": 1532416,
+   "Year": 2016,
+   "Month": "Aug",
+   "MonthCode": 8
+ },
+ {
+   "Date": "01sep2016",
+   "NewReferrals": 1588655,
+   "Year": 2016,
+   "Month": "Sep",
+   "MonthCode": 9
+ },
+ {
+   "Date": "01oct2016",
+   "NewReferrals": 1573928,
+   "Year": 2016,
+   "Month": "Oct",
+   "MonthCode": 10
+ },
+ {
+   "Date": "01nov2016",
+   "NewReferrals": 1657024,
+   "Year": 2016,
+   "Month": "Nov",
+   "MonthCode": 11
+ },
+ {
+   "Date": "01dec2016",
+   "NewReferrals": 1398622,
+   "Year": 2016,
+   "Month": "Dec",
+   "MonthCode": 12
+ },
+ {
+   "Date": "01jan2017",
+   "NewReferrals": 1588726,
+   "Year": 2017,
+   "Month": "Jan",
+   "MonthCode": 1
+ },
+ {
+   "Date": "01feb2017",
+   "NewReferrals": 1532687,
+   "Year": 2017,
+   "Month": "Feb",
+   "MonthCode": 2
+ },
+ {
+   "Date": "01mar2017",
+   "NewReferrals": 1787232,
+   "Year": 2017,
+   "Month": "Mar",
+   "MonthCode": 3
+ },
+ {
+   "Date": "01apr2017",
+   "NewReferrals": 1436983,
+   "Year": 2017,
+   "Month": "Apr",
+   "MonthCode": 4
+ },
+ {
+   "Date": "01may2017",
+   "NewReferrals": 1666097,
+   "Year": 2017,
+   "Month": "May",
+   "MonthCode": 5
+ },
+ {
+   "Date": "01jun2017",
+   "NewReferrals": 1711834,
+   "Year": 2017,
+   "Month": "Jun",
+   "MonthCode": 6
+ },
+ {
+   "Date": "01jul2017",
+   "NewReferrals": 1625701,
+   "Year": 2017,
+   "Month": "Jul",
+   "MonthCode": 7
+ },
+ {
+   "Date": "01aug2017",
+   "NewReferrals": 1612863,
+   "Year": 2017,
+   "Month": "Aug",
+   "MonthCode": 8
+ },
+ {
+   "Date": "01sep2017",
+   "NewReferrals": 1568564,
+   "Year": 2017,
+   "Month": "Sep",
+   "MonthCode": 9
+ },
+ {
+   "Date": "01oct2017",
+   "NewReferrals": 1669601,
+   "Year": 2017,
+   "Month": "Oct",
+   "MonthCode": 10
+ },
+ {
+   "Date": "01nov2017",
+   "NewReferrals": 1644925,
+   "Year": 2017,
+   "Month": "Nov",
+   "MonthCode": 11
+ },
+ {
+   "Date": "01dec2017",
+   "NewReferrals": 1336987,
+   "Year": 2017,
+   "Month": "Dec",
+   "MonthCode": 12
+ },
+ {
+   "Date": "01jan2018",
+   "NewReferrals": 1657878,
+   "Year": 2018,
+   "Month": "Jan",
+   "MonthCode": 1
+ },
+ {
+   "Date": "01feb2018",
+   "NewReferrals": 1522794,
+   "Year": 2018,
+   "Month": "Feb",
+   "MonthCode": 2
+ },
+ {
+   "Date": "01mar2018",
+   "NewReferrals": 1633324,
+   "Year": 2018,
+   "Month": "Mar",
+   "MonthCode": 3
+ },
+ {
+   "Date": "01apr2018",
+   "NewReferrals": 1640427,
+   "Year": 2018,
+   "Month": "Apr",
+   "MonthCode": 4
+ },
+ {
+   "Date": "01may2018",
+   "NewReferrals": 1746208,
+   "Year": 2018,
+   "Month": "May",
+   "MonthCode": 5
+ },
+ {
+   "Date": "01jun2018",
+   "NewReferrals": 1675427,
+   "Year": 2018,
+   "Month": "Jun",
+   "MonthCode": 6
+ },
+ {
+   "Date": "01jul2018",
+   "NewReferrals": 1714390,
+   "Year": 2018,
+   "Month": "Jul",
+   "MonthCode": 7
+ },
+ {
+   "Date": "01aug2018",
+   "NewReferrals": 1634177,
+   "Year": 2018,
+   "Month": "Aug",
+   "MonthCode": 8
+ },
+ {
+   "Date": "01sep2018",
+   "NewReferrals": 1553736,
+   "Year": 2018,
+   "Month": "Sep",
+   "MonthCode": 9
+ },
+ {
+   "Date": "01oct2018",
+   "NewReferrals": 1841759,
+   "Year": 2018,
+   "Month": "Oct",
+   "MonthCode": 10
+ },
+ {
+   "Date": "01nov2018",
+   "NewReferrals": 1757848,
+   "Year": 2018,
+   "Month": "Nov",
+   "MonthCode": 11
+ },
+ {
+   "Date": "01dec2018",
+   "NewReferrals": 1431137,
+   "Year": 2018,
+   "Month": "Dec",
+   "MonthCode": 12
+ },
+ {
+   "Date": "01jan2019",
+   "NewReferrals": 1794128,
+   "Year": 2019,
+   "Month": "Jan",
+   "MonthCode": 1
+ },
+ {
+   "Date": "01feb2019",
+   "NewReferrals": 1638322,
+   "Year": 2019,
+   "Month": "Feb",
+   "MonthCode": 2
+ },
+ {
+   "Date": "01mar2019",
+   "NewReferrals": 1741493,
+   "Year": 2019,
+   "Month": "Mar",
+   "MonthCode": 3
+ },
+ {
+   "Date": "01apr2019",
+   "NewReferrals": 1656081,
+   "Year": 2019,
+   "Month": "Apr",
+   "MonthCode": 4
+ },
+ {
+   "Date": "01may2019",
+   "NewReferrals": 1755805,
+   "Year": 2019,
+   "Month": "May",
+   "MonthCode": 5
+ },
+ {
+   "Date": "01jun2019",
+   "NewReferrals": 1641179,
+   "Year": 2019,
+   "Month": "Jun",
+   "MonthCode": 6
+ },
+ {
+   "Date": "01jul2019",
+   "NewReferrals": 1801797,
+   "Year": 2019,
+   "Month": "Jul",
+   "MonthCode": 7
+ },
+ {
+   "Date": "01aug2019",
+   "NewReferrals": 1577132,
+   "Year": 2019,
+   "Month": "Aug",
+   "MonthCode": 8
+ },
+ {
+   "Date": "01sep2019",
+   "NewReferrals": 1637851,
+   "Year": 2019,
+   "Month": "Sep",
+   "MonthCode": 9
+ },
+ {
+   "Date": "01oct2019",
+   "NewReferrals": 1815462,
+   "Year": 2019,
+   "Month": "Oct",
+   "MonthCode": 10
+ },
+ {
+   "Date": "01nov2019",
+   "NewReferrals": 1659986,
+   "Year": 2019,
+   "Month": "Nov",
+   "MonthCode": 11
+ },
+ {
+   "Date": "01dec2019",
+   "NewReferrals": 1462659,
+   "Year": 2019,
+   "Month": "Dec",
+   "MonthCode": 12
+ },
+ {
+   "Date": "01jan2020",
+   "NewReferrals": 1741424,
+   "Year": 2020,
+   "Month": "Jan",
+   "MonthCode": 1
+ },
+ {
+   "Date": "01feb2020",
+   "NewReferrals": 1603378,
+   "Year": 2020,
+   "Month": "Feb",
+   "MonthCode": 2
+ },
+ {
+   "Date": "01mar2020",
+   "NewReferrals": 1220636,
+   "Year": 2020,
+   "Month": "Mar",
+   "MonthCode": 3
+ },
+ {
+   "Date": "01apr2020",
+   "NewReferrals": 491101,
+   "Year": 2020,
+   "Month": "Apr",
+   "MonthCode": 4
+ },
+ {
+   "Date": "01may2020",
+   "NewReferrals": 626540,
+   "Year": 2020,
+   "Month": "May",
+   "MonthCode": 5
+ },
+ {
+   "Date": "01jun2020",
+   "NewReferrals": 939450,
+   "Year": 2020,
+   "Month": "Jun",
+   "MonthCode": 6
+ },
+ {
+   "Date": "01jul2020",
+   "NewReferrals": 1178528,
+   "Year": 2020,
+   "Month": "Jul",
+   "MonthCode": 7
+ },
+ {
+   "Date": "01aug2020",
+   "NewReferrals": 1114414,
+   "Year": 2020,
+   "Month": "Aug",
+   "MonthCode": 8
+ },
+ {
+   "Date": "01sep2020",
+   "NewReferrals": 1332834,
+   "Year": 2020,
+   "Month": "Sep",
+   "MonthCode": 9
+ },
+ {
+   "Date": "01oct2020",
+   "NewReferrals": 1393861,
+   "Year": 2020,
+   "Month": "Oct",
+   "MonthCode": 10
+ },
+ {
+   "Date": "01nov2020",
+   "NewReferrals": 1348049,
+   "Year": 2020,
+   "Month": "Nov",
+   "MonthCode": 11
+ },
+ {
+   "Date": "01dec2020",
+   "NewReferrals": 1260501,
+   "Year": 2020,
+   "Month": "Dec",
+   "MonthCode": 12
+ },
+ {
+   "Date": "01jan2021",
+   "NewReferrals": 1185074,
+   "Year": 2021,
+   "Month": "Jan",
+   "MonthCode": 1
+ },
+ {
+   "Date": "01feb2021",
+   "NewReferrals": 1253853,
+   "Year": 2021,
+   "Month": "Feb",
+   "MonthCode": 2
+ },
+ {
+   "Date": "01mar2021",
+   "NewReferrals": 1614201,
+   "Year": 2021,
+   "Month": "Mar",
+   "MonthCode": 3
+ },
+ {
+   "Date": "01apr2021",
+   "NewReferrals": 1495260,
+   "Year": 2021,
+   "Month": "Apr",
+   "MonthCode": 4
+ },
+ {
+   "Date": "01may2021",
+   "NewReferrals": 1514939,
+   "Year": 2021,
+   "Month": "May",
+   "MonthCode": 5
+ },
+ {
+   "Date": "01jun2021",
+   "NewReferrals": 1676342,
+   "Year": 2021,
+   "Month": "Jun",
+   "MonthCode": 6
+ },
+ {
+   "Date": "01jul2021",
+   "NewReferrals": 1604888,
+   "Year": 2021,
+   "Month": "Jul",
+   "MonthCode": 7
+ },
+ {
+   "Date": "01aug2021",
+   "NewReferrals": 1469370,
+   "Year": 2021,
+   "Month": "Aug",
+   "MonthCode": 8
+ }
+]
