@@ -1,7 +1,7 @@
 .dashboardButton {
-    background-color: transparent;
+    background-color: rgb(5, 56, 107);
     border: 1px solid rgb(5, 56, 107);
-    color: rgb(5, 56, 107));
+    color: rgb(237, 245, 225);
     font-family: 'Poppins',sans-serif;
     line-height: 16px;
     font-weight: 600;
@@ -21,3 +21,8 @@
     transition: border-color,background-color .5s ease;
     white-space: nowrap;
   }
+
+  .dashboardButton:hover, .dashboardButton:active {
+    background-color: rgb(92, 219, 149);
+    color: rgb(5, 56, 107);
+}
