@@ -44,7 +44,7 @@ a{
 -->
     
 .chart{
-    width: 330px;
+    max-height: 300px;
     border-width: 10px;
     background-color: white;
     border-style: solid;
