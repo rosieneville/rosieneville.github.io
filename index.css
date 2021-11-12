@@ -45,10 +45,10 @@ a{
     
 .chart{
     max-height: 300px;
-    border-width: 10px;
+/*  border-width: 10px; */
     background-color: white;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-    margin: auto;
+/*  border-style: solid; */
+/*  border-radius: 5px; */
+/*  border-color: white; */
+/*  margin: auto; */
 }
