@@ -40,18 +40,14 @@ a{
     padding: 1px;
     gap: 10px 10px
   }
+
     
-<! --
 .chart{
-    width: 400px;
-    max-height: 400px;
-    border-width: 10px;
     background-color: white;
+    width:330px;
+    border-width: 10px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 12px;
     border-color: white;
-    margin: auto;
-
-
-}
---> 
+    margin: center;
+} 
