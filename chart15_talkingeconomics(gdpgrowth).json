@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Quartely GDP growth",
+      "subtitle": "",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/denmark-sweden(gdp).csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+  
+      {"filter": {"field": "Country", "oneOf": ["Sweden", "Denmark"]}}
+    ],
+    "height": 300,
+    "width": 310,
+    "mark": {"type": "line", "point": false},
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "GDP_growth_rate",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "Country",
+        "type": "nominal",
+        "scale": {"scheme": "tableau10"},
+        "title": "",
+        "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+      }
+    }
+  }
