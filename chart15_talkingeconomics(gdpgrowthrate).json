@@ -24,7 +24,7 @@
         "field": "Date",
         "type": "temporal",
         "title": null,
-        "axis": {"grid": false}
+        "timeUnit": "yearmonth"
       },
       "y": {
         "field": "GDP_growth_rate",
