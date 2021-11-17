@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Daily new confirmed COVID-19 deaths per million people",
+      "subtitle": "7-day rolling average.",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/DNK-SWE(covid).csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+  
+      {"filter": {"field": "iso_code", "oneOf": ["DNK", "SWE"]}}
+    ],
+    "height": 300,
+    "width": 310,
+    "mark": {"type": "line", "point": false},
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "new_deaths_smoothed_per_million",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "location",
+        "type": "nominal",
+        "scale": {"scheme": "tableau10"},
+        "title": "",
+        "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+      }
+    }
+  }
