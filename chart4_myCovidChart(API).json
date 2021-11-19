@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Coronavirus Hospital Admissions",
+  "background": null,
+  "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nhsRegion&metric=newAdmissions&format=csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "Hospitalisation by NHS Trust",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "area", "width": 10},
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["areaName"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Midlands",
+          "East of England",
+          "London",
+          "North East",
+          "North West",
+          "South East",
+          "South West",
+          "North East and Yorkshire"
+        ],
+        "name": "Region"
+      }
+    }
+  },
+  "transform": [
+    {"filter": {"selection": "Region"}},
+    {
+      "filter": {
+        "field": "date",
+        "range": [
+          {"year": 2020, "month": "dec", "date": 1},
+          {"year": 2050, "month": "dec", "date": 30}
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null},
+    "y": {"field": "newAdmissions", "type": "quantitative", "title": null},
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "legend": null,
+      "scale": {"scheme": "rainbow"}
+    }
+  }
+}
