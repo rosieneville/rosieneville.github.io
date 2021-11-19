@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Coronavirus Hospital Admissions",
-  "background": null,
+  "background": "white",
   "data": {
     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nhsRegion&metric=newAdmissions&format=csv",
     "format": {"type": "csv"}
