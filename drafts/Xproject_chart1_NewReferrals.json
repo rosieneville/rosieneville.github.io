@@ -1,4 +1,4 @@
- {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
  "title": {
@@ -19,8 +19,9 @@
     
 "encoding":{
     "x":{
-        "field": "MonthCode",
-        "type": "quantitative"
+        "field": "Month",
+        "type": "ordinal",
+        "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
         },
 
     "y": {"field": "NewReferrals",
