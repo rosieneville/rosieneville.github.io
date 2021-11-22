@@ -15,15 +15,16 @@
   },
   "height": 300,
   "width": 300,
-  "mark": {"type": "line", "width": 10},
+
+
   "selection": {
-    "TreatmentFunction": {
+    "Region": {
       "type": "single",
       "fields": ["TreatmentFunction"],
       "bind": {
         "input": "select",
         "options": [
-          null,
+
           "General Surgery",
           "Urology",
           "Trauma & Orthopaedics",
@@ -34,16 +35,28 @@
           "Plastic Surgery",
           "Cardiothoracic Surgery"
         ],
-        "name": "Treatment"
+        "name": "Pick a Treatment"
       }
     }
   },
 
- 
+ "transform": [
+
+     {"filter": {
+         "field": "CCGName",
+         "oneOf": ["NHS ENGLAND"]
+     }},
+
+     {"filter": {"selection": "Region"}}
+
+
+ ],
+
+   "mark": {"type": "line", "width": 10},
 
   "encoding": {
     "x": {"field": "Date", "type": "temporal", "title": null},
-    "y": {"field": "NewReferrals", "type": "quantitative", "title": null},
+    "y": {"field": "NumberofnewRTTclockstartsd", "type": "quantitative", "title": null},
     "color": {
       "field": "areaName",
       "type": "nominal",
