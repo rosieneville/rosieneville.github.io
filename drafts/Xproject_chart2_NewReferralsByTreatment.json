@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Coronavirus Hospital Admissions",
+  "background": "white",
+  "data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/newPeriodCommissioner_all.csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "line", "width": 10},
+  "selection": {
+    "TreatmentFunction": {
+      "type": "single",
+      "fields": ["TreatmentFunction"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "General Surgery",
+          "Urology",
+          "Trauma & Orthopaedics",
+          "ENT",
+          "Ophthalmology",
+          "Oral Surgery",
+          "Neurosurgery",
+          "Plastic Surgery",
+          "Cardiothoracic Surgery"
+        ],
+        "name": "Treatment"
+      }
+    }
+  },
+
+ 
+
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "title": null},
+    "y": {"field": "NewReferrals", "type": "quantitative", "title": null},
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "legend": null,
+      "scale": {"scheme": "rainbow"}
+    }
+  }
+}
+
