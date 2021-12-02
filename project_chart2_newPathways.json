@@ -26,11 +26,13 @@
     "x":{
         "field": "Month",
         "type": "ordinal",
+        "title": null,
         "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
         },
 
     "y": {"field": "NewReferrals",
-    "type": "quantitative"
+    "type": "quantitative",
+    "title": "New Referrals"
         },
     
     "color":{
