@@ -6,12 +6,14 @@
     "format": {"type": "csv"}
   },
   "title": {
-    "text": "Covid cases: UK regions",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "text": "New Covid cases by region",
+    "subtitle":"",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
+  
   "config": {"background": "white", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": 280,
