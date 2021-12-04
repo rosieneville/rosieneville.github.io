@@ -7,9 +7,10 @@
     "format": {"type": "csv"}
   },
   "title": {
-    "text": "Hospitalisation by NHS Trust",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "text": "Hospitalisation by Region",
+    "subtitle":"++",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
@@ -50,13 +51,25 @@
     }
   ],
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "title": null},
-    "y": {"field": "newAdmissions", "type": "quantitative", "title": null},
+    "x": {
+      "field": "date", 
+      "type": "temporal", 
+      "axis": {"title": null, "grid": false}
+      },
+    "y": {
+      "field": "newAdmissions", 
+      "type": "quantitative", 
+      "axis": {"title": null, "grid": false}
+      },
     "color": {
       "field": "areaName",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "rainbow"}
-    }
+      "scale": {"scheme": "reds", "reverse": true}
+
+    },
+   "tooltip": [
+        {"field": "areaName", "type": "nominal", "title": "Region"}
+      ]
   }
 }
