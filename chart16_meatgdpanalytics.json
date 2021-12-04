@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+"description": "",
+ 
+   "title": {
+    "text": "",
+    "subtitle":"",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+ 
+"data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/meatgdp.csv",
+    "format": {
+      "type": "csv"
+      }
+  },
+ 
+  "layer": [
+     {
+"mark": {"type": "circle"},
+ 
+"encoding": {
+    "x": {
+      "field": "gdppc",
+      "type": "quantitative",
+      "title": "GDP per capita"
+         },
+ 
+    "y": {
+      "field": "meatkgcyr",
+      "type": "quantitative",
+      "title": "Meat consumption per captia"
+    },
+ 
+    "color":{
+        "field": "year",
+        "type": "nominal",
+        "legend": null
+          },
+ 
+ 
+    "tooltip": [
+      {"field": "country", "type":"nominal", "title": "Country"},
+      {"field": "gdppc", "type":"quantitative", "title": "Meat Consumption"},
+      {"field": "meatkgcyr", "type":"quantitative", "title": "GDP per capita"}
+    ]
+    }
+ 
+  },
+ 
+ 
+    {
+      "mark": {"type": "line", "color": "red"},
+      "encoding": {
+        "x": {"field": "gdppc", "type": "quantitative"},
+        "y": {"field": "ols", "type": "quantitative"}
+      }
+    },
+   
+    {
+      "mark": {
+        "type": "text",
+        "color": "black",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "transform": [
+        {
+          "regression": "meatkgcyr",
+          "on": "gdppc",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
