@@ -1,4 +1,4 @@
-country,code,year,outputsiderealgdppercapitagdppc_,meatfoodsupplyquantitykgcapitayr,ols
+country,code,year,gdppc,meatkgcyr,ols
 Albania,ALB,2017,11941.197,47.509998,41.912495
 Algeria,DZA,2017,12323.576,18.059999,42.381062
 Angola,AGO,2017,4993.8457,23.49,33.399208
