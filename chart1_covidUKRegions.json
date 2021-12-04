@@ -63,7 +63,7 @@
       "field": "areaName",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "reds", "reverse": true}
+      "scale": {"scheme": "oranges", "reverse": true}
     },
   
 
