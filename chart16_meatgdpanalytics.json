@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "",
-    "height": 300,
+  "height": 300,
   "width": 280,
   "title": {
-    "text": "",
+    "text": "Relationship between Meat Consumption and GDP per capita",
     "subtitle": "",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -22,14 +22,14 @@
         "x": {
           "field": "gdppc",
           "type": "quantitative",
-          "title": "GDP per capita",
-          "axis": {"title": null, "grid": true}
+          "title": "GDP per capita ($)",
+          "axis": { "grid": true, "titleFontSize": 9}
         },
         "y": {
           "field": "meatkgcyr",
           "type": "quantitative",
-          "title": "Meat consumption per captia",
-              "axis": {"title": null, "grid": true}
+          "title": "Meat supply per person (kg)",
+          "axis": {"grid": true, "titleFontSize": 9}
         },
         "color": {"field": "year", "type": "nominal", "legend": null},
         "tooltip": [
