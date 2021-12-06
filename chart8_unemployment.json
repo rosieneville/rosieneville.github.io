@@ -1,38 +1,22 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-    "data": {
-       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgxb/dataset/lms/data",
-       "format": {
-           "type":"json",
-           "property": "years"}},
-
-
-    "title": {
-        "text": "Unemployment rate (%) - Aged 25-49",
-        "subtitle": "United Kingdom (thousands) seasonally adjusted",
-        "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "start",
-        "color": "black"},
-
-    "width":300,
-    "height":300,
-
-    "mark":{
-        "type": "area",
-        "color":"lightseagreen"
-        },
- 
-
-    "encoding": {
-      "x": {
-          "field": "date",
-          "type": "temporal",
-          "title":null},
-      "y": {
-          "field": "value",
-          "type": "quantitative",
-          "title":null}
-    }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgxb/dataset/lms/data",
+    "format": {"type": "json", "property": "years"}
+  },
+  "title": {
+    "text": "Unemployment rate of 25-49 year olds",
+    "subtitle": "United Kingdom seasonally adjusted. Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 280,
+  "height": 300,
+  "mark": {"type": "line", "color": "lightseagreen"},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null,  "axis": {"title": null, "grid": false}},
+    "y": {"field": "value", "type": "quantitative", "title": null,  "axis": {"title": null, "grid": false}}
+  }
 }
