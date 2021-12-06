@@ -1,22 +1,23 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Coronavirus Hospital Admissions",
-  "background": "white",
+  "background": null,
   "data": {
     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nhsRegion&metric=newAdmissions&format=csv",
     "format": {"type": "csv"}
   },
-  "title": {
+"title": {
     "text": "Hospitalisation by Region",
-    "subtitle":"++",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitle": "New admissions. Source: gov.uk",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
+
   "height": 300,
-  "width": 300,
-  "mark": {"type": "area", "width": 10},
+  "width": 280,
+  "mark": {"type": "bar", "width": 10},
   "selection": {
     "Region": {
       "type": "single",
@@ -51,25 +52,14 @@
     }
   ],
   "encoding": {
-    "x": {
-      "field": "date", 
-      "type": "temporal", 
-      "axis": {"title": null, "grid": false}
-      },
-    "y": {
-      "field": "newAdmissions", 
-      "type": "quantitative", 
-      "axis": {"title": null, "grid": false}
-      },
+    "x": {"field": "date", "type": "temporal", "title": null, "axis":{"grid": false}},
+    "y": {"field": "newAdmissions", "type": "quantitative", "title": null, "axis":{"grid": false}},
     "color": {
       "field": "areaName",
       "type": "nominal",
       "legend": null,
       "scale": {"scheme": "reds", "reverse": true}
-
     },
-   "tooltip": [
-        {"field": "areaName", "type": "nominal", "title": "Region"}
-      ]
+    "tooltip": [{"field": "areaName", "type": "nominal", "title": "Region"}]
   }
 }
