@@ -1,58 +1,52 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- 
-"description": "",
- 
-   "title": {
+  "description": "",
+    "height": 300,
+  "width": 280,
+  "title": {
     "text": "",
-    "subtitle":"",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
- 
-"data": {
+  "data": {
     "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/meatgdp.csv",
-    "format": {
-      "type": "csv"
-      }
+    "format": {"type": "csv"}
   },
- 
   "layer": [
-     {
-"mark": {"type": "circle"},
- 
-"encoding": {
-    "x": {
-      "field": "gdppc",
-      "type": "quantitative",
-      "title": "GDP per capita"
-         },
- 
-    "y": {
-      "field": "meatkgcyr",
-      "type": "quantitative",
-      "title": "Meat consumption per captia"
-    },
- 
-    "color":{
-        "field": "year",
-        "type": "nominal",
-        "legend": null
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "x": {
+          "field": "gdppc",
+          "type": "quantitative",
+          "title": "GDP per capita",
+          "axis": {"title": null, "grid": true}
+        },
+        "y": {
+          "field": "meatkgcyr",
+          "type": "quantitative",
+          "title": "Meat consumption per captia",
+              "axis": {"title": null, "grid": true}
+        },
+        "color": {"field": "year", "type": "nominal", "legend": null},
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {
+            "field": "gdppc",
+            "type": "quantitative",
+            "title": "Meat Consumption"
           },
- 
- 
-    "tooltip": [
-      {"field": "country", "type":"nominal", "title": "Country"},
-      {"field": "gdppc", "type":"quantitative", "title": "Meat Consumption"},
-      {"field": "meatkgcyr", "type":"quantitative", "title": "GDP per capita"}
-    ]
-    }
- 
-  },
- 
- 
+          {
+            "field": "meatkgcyr",
+            "type": "quantitative",
+            "title": "GDP per capita"
+          }
+        ]
+      }
+    },
     {
       "mark": {"type": "line", "color": "red"},
       "encoding": {
@@ -60,7 +54,6 @@
         "y": {"field": "ols", "type": "quantitative"}
       }
     },
-   
     {
       "mark": {
         "type": "text",
@@ -70,11 +63,7 @@
         "y": -5
       },
       "transform": [
-        {
-          "regression": "meatkgcyr",
-          "on": "gdppc",
-          "params": true
-        },
+        {"regression": "meatkgcyr", "on": "gdppc", "params": true},
         {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
       ],
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
