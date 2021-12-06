@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK Prime Ministers",
+    "subtitle":"Prime Ministers by length of tenure (years)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {"a": "James Callaghan", "b": 3.079, "c": "Labour"},
+      {"a": "Margaret Thatcher", "b": 11.570, "c": "Conservative"},
+      {"a": "John Major", "b": 6.425, "c": "Conservative"},
+      {"a": "Tony Blair", "b": 10.153, "c": "Labour"},
+      {"a": "Gordon Brown", "b": 2.871, "c": "Labour"},
+      {"a": "David Cameron", "b": 6.016, "c": "Conservative"},
+      {"a": "Theresa May", "b": 3.03, "c": "Conservative"}
+    ]
+  },
+  "height": 300,
+  "width": 280,
+
+  "mark": {"type": "bar", "color": "#05386B"},
+
+  "encoding": {
+    "x": {
+      "field": "a",
+      "sort":[ "Theresa May","David Cameron",  "Gordon Brown","Tony Blair", "John Major", "Margaret Thatcher","James Callaghan" ] ,
+      "type": "nominal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45
+        
+      }
+    },
+    "y": {
+      "field": "b",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "c",
+      "legend":{"title":"Political party", "orient": "top-left"},
+      "type": "nominal",
+      "scale": {"range": ["navy", "#FF0000"]}
+    }
+  }
+}
