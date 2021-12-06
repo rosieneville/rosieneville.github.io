@@ -1,72 +1,85 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
- "title": {
-      "text": "New Referrals",
-      "subtitle": "Number of patients who started new care pathways",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
- },
-
-"data": { 
-    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/%5B2%5Dnewpathways_total.csv"
-},
-
-
-
-
-"layer": [
-  {        
-"mark": {"type": "line"},
-"encoding":{
-    "x":{
-        "field": "Month",
-        "type": "ordinal",
-        "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
-        },
-
-    "y": {"field": "NewReferrals",
-    "type": "quantitative"
-        },
-    
-    "color":{
-        "field": "Year",
-        "type": "nominal",
-        "scale": {"scheme": "set1"}
-          }
-  }
+  "title": {
+    "text": "New Referrals",
+    "subtitle": "Number of patients who started new care pathways",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
   },
-
-  {
-"mark": {"type": "circle"},
-"encoding":{
-    "x":{
-        "field": "Month",
-        "type": "ordinal",
-        "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
+  "width": 280,
+  "data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/%5B2%5Dnewpathways_total.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {
+          "field": "Month",
+          "type": "ordinal",
+          "sort": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
         },
-
-    "y": {"field": "NewReferrals",
-    "type": "quantitative"
-        },  
-
-        "color":{
-        "field": "Year",
-        "type": "nominal",
-        "scale": {"scheme": "set1"}
-          },
-  
-
-
-      "tooltip": [
-        {"field": "Year", "type": "nominal", "title": "Year"},
-        {"field": "Month", "type": "ordinal", "title": "Month"},
-        {"field": "NewReferrals", "type": "quantitative", "title": "New Referals"}
-      ]
-}
-}
-]
+        "y": {"field": "NewReferrals", "type": "quantitative"},
+        "color": {
+          "field": "Year",
+          "type": "nominal",
+          "scale": {"scheme": "set1"},
+          "legend": {"orient": "bottom-right", "title": null}
+        }
+      }
+    },
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "x": {
+          "field": "Month",
+           "title":null,
+          "type": "ordinal",
+          "sort": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov"
+          ]
+        },
+        "y": {"field": "NewReferrals", "type": "quantitative", "title":null},
+        "color": {
+          "field": "Year",
+          "type": "nominal",
+          "scale": {"scheme": "set1"}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "nominal", "title": "Year"},
+          {"field": "Month", "type": "ordinal", "title": "Month"},
+          {
+            "field": "NewReferrals",
+            "type": "quantitative",
+            "title": "New Referals"
+          }
+        ]
+      }
+    }
+  ]
 
 }
