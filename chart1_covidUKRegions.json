@@ -6,14 +6,13 @@
     "format": {"type": "csv"}
   },
   "title": {
-    "text": "New Covid cases by region",
-    "subtitle":"++",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "text": "New Daily Covid Cases by Region",
+    "subtitle": "New cases by publish date. Source: gov.uk",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-  
   "config": {"background": "white", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": 280,
@@ -54,16 +53,14 @@
   ],
   "encoding": {
     "x": {
-      "field": "date", 
-      "type": "temporal", 
+      "field": "date",
+      "type": "temporal",
       "axis": {"title": null, "grid": false}
-      
-      },
+    },
     "y": {
       "field": "newCasesByPublishDate",
       "type": "quantitative",
       "axis": {"title": null, "grid": false}
-
     },
     "color": {
       "field": "areaName",
@@ -71,11 +68,6 @@
       "legend": null,
       "scale": {"scheme": "blues", "reverse": true}
     },
-  
-
-
-      "tooltip": [
-        {"field": "areaName", "type": "nominal", "title": "Region"}
-      ]
+    "tooltip": [{"field": "areaName", "type": "nominal", "title": "Region"}]
   }
 }
