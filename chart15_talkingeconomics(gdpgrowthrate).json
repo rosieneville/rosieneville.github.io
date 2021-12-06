@@ -1,46 +1,43 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Quartely GDP growth",
-      "subtitle": "",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Covid and economic activity",
+    "subtitle": "Quartely GDP growth.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/denmark-sweden.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": {"field": "Country", "oneOf": ["Sweden", "Denmark"]}}
+  ],
+  "height": 300,
+  "width": 310,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false},
+      "timeUnit": "yearmonth"
     },
-    "data": {
-      "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/denmark-sweden.csv",
-      "format": {"type": "csv"}
+    "y": {
+      "field": "GDP_growth_rate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
     },
-    "transform": [
-  
-      {"filter": {"field": "Country", "oneOf": ["Sweden", "Denmark"]}}
-    ],
-    "height": 300,
-    "width": 310,
-    "mark": {"type": "line", "point": false},
-    "encoding": {
-      "x": {
-        "field": "Date",
-        "type": "temporal",
-        "title": null,
-        "axis": {"grid": false},
-        "timeUnit": "yearmonth"
-      },
-
-
-      "y": {
-        "field": "GDP_growth_rate",
-        "type": "quantitative",
-        "title": null,
-        "axis": {"grid": true}
-      },
-      "color": {
-        "field": "Country",
-        "type": "nominal",
-        "scale": {"scheme": "tableau10"},
-        "title": "",
-        "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
-      }
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "scale": {"range": [ "#FF0000", "#FFCD00"]},
+      "title": "",
+      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
     }
   }
+}
