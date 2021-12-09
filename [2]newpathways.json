@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
+"height": 300,
+"width": 280,
  "title": {
-      "text": "Number of patients added to waiting list fell sharply",
+      "text": "Figure 2",
       "subtitle": "Number of new treatment pathways in England by month",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
@@ -32,13 +33,15 @@
 
     "y": {"field": "NewReferrals",
     "type": "quantitative",
-    "title": "New Referrals"
+    "title": "",
+     "axis":{"grid": false}
         },
     
     "color":{
         "field": "Year",
         "type": "nominal",
-        "scale": {"scheme": "set1"}
+        "scale": {"scheme": "set1"},
+         "legend": {"orient": "bottom-right", "title": null}
           }
   }
   },
