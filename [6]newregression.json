@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "",
   "height": 300,
   "width": 280,
   "title": {
-    "text": "Figure 5",
+    "text": "Figure 6",
     "subtitle": "",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -17,7 +16,7 @@
   },
   "layer": [
     {
-      "mark": {"type": "circle"},
+      "mark": {"type": "circle", "size": 75, "opacity":0.9},
       "encoding": {
         "x": {
           "field": "imdquantile",
@@ -28,14 +27,14 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "title": "Percentage change in completed pathways",
+          "title": "Percentage change in new pathways",
           "axis": {"grid": true, "titleFontSize": 9}
         },
         "color": {
           "field": "Region", 
           "type": "nominal", 
           "legend": null,
-          "scale": {"scheme":"set2"}
+          "scale": {"range":["#f4c245"]}
           },
         "tooltip": [
           {"field": "CCGName", "type": "nominal", "title": "CCG"},
@@ -52,7 +51,7 @@
       }
     },
     {
-      "mark": {"type": "line", "color": "red"},
+      "mark": {"type": "line", "color": "#223E7D"},
       "encoding": {
         "x": {"field": "imdquantile", "type": "quantitative"},
         "y": {"field": "ols", "type": "quantitative"}
