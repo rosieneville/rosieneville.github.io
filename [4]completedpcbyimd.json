@@ -3,7 +3,7 @@
  "height": 300,
   "width": 280,
  "title": {
-      "text": "Figure 4: ++",
+      "text": "Figure 4",
       "subtitle": "Percentage decrease in completed pathways by deprivation quintile",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
@@ -34,7 +34,8 @@
 
     "y": {"field": "pcApr19Apr20",
     "type": "quantitative",
-    "title": null
+    "title": null,
+    "axis":{"grid": false}
         },
 
     "tooltip":[
