@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
  "title": {
-      "text": "++",
+      "text": "Figure 1",
       "subtitle": "Number of completed pathways in England by month",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
@@ -32,13 +32,15 @@
 
     "y": {"field": "CompletePathways",
     "type": "quantitative",
-    "title": "Completed Pathways"
+    "title": null,
+    "axis":{"grid": false}
         },
     
     "color":{
         "field": "Year",
         "type": "nominal",
-        "scale": {"scheme": "set1"}
+        "scale": {"scheme": "set1"},
+         "legend": {"orient": "bottom-right", "title": null}
           }
   }
   },
