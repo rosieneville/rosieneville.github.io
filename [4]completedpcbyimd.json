@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "height": 300,
+  "width": 280,
+ "title": {
+      "text": "Figure 4: ++",
+      "subtitle": "Percentage decrease in completed pathways by deprivation quintile",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+ },
+
+"data": { 
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/%5B4%5Dcompletedpcbyimd.csv"
+},
+
+
+"layer": [
+  {        
+"mark": {
+  "type": "bar",
+  "color": "#f4c245"
+  },
+"encoding":{
+    "x":{
+        "field": "imdq",
+        "type": "ordinal",
+        "title": null,
+        "axis":{
+          "labelAngle": 0
+           }
+        },
+
+    "y": {"field": "pcApr19Apr20",
+    "type": "quantitative",
+    "title": null
+        },
+
+    "tooltip":[
+      {"field": "imdq", "type": "ordinal", "title": "IMD quintile"},
+      {"field": "pcApr19Apr20", "type": "quantitative", "title": "Percentage decrease"}
+    ]
+  }
+  }   
+  
+
+]
+
+}
