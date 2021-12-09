@@ -31,19 +31,23 @@
           "title": "Percentage change in completed pathways",
           "axis": {"grid": true, "titleFontSize": 9}
         },
-        "color": {"field": "imdquantile", "type": "nominal", "legend": null},
+        "color": {
+          "field": "Region", 
+          "type": "nominal", 
+          "legend": null,
+          "scale": {"scheme":"set2"}
+          },
         "tooltip": [
           {"field": "CCGName", "type": "nominal", "title": "CCG"},
-          {
-            "field": "imdquantile",
+          {"field": "imdquantile",
             "type": "quantitative",
-            "title": "IMD quintile"
-          },
-          {
-            "field": "value",
+            "title": "IMD quintile"},
+          {"field": "value",
             "type": "quantitative",
-            "title": "Value"
-          }
+            "title": "Value" },
+          {"field": "Region",
+            "type": "nominal",
+            "title": "Region" }
         ]
       }
     },
