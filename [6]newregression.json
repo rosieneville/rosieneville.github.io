@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "height": 300,
+  "width": 280,
+  "title": {
+    "text": "Figure 5",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/%5B6%5Dnewregression.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "x": {
+          "field": "imdquantile",
+          "type": "quantitative",
+          "title": "Deprivation Quintile",
+          "axis": { "grid": true, "titleFontSize": 9}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Percentage change in completed pathways",
+          "axis": {"grid": true, "titleFontSize": 9}
+        },
+        "color": {
+          "field": "Region", 
+          "type": "nominal", 
+          "legend": null,
+          "scale": {"scheme":"set2"}
+          },
+        "tooltip": [
+          {"field": "CCGName", "type": "nominal", "title": "CCG"},
+          {"field": "imdquantile",
+            "type": "quantitative",
+            "title": "IMD quintile"},
+          {"field": "value",
+            "type": "quantitative",
+            "title": "Value" },
+          {"field": "Region",
+            "type": "nominal",
+            "title": "Region" }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "red"},
+      "encoding": {
+        "x": {"field": "imdquantile", "type": "quantitative"},
+        "y": {"field": "ols", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "black",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "transform": [
+        {"regression": "value", "on": "imdquantile", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
