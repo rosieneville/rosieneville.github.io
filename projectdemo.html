@@ -40,7 +40,9 @@
   
 <p> NHS waiting lists have long been a politically salient topic. In the Summer, an analysis published by the IFS found that more than 13 million patients may be awaiting treatment by July 2022. </p>
 <p> My project looks at the relationship between deprivation (as a proxy for socioeconomic status) and the pandemics effect on NHS waiting lists. <p>
-<h2> Unsurprisingly, as resources shifted toward coronavirus, the number of elective treatments fell. </h2>  
+    
+<h2> Drop in elective treatments. </h2>  
+<p> When the pandemic hit, a lot of planned elective care had to be postponed in order to deal with the pressures of coronavirus. This led to a sharp fall in completed pathways. In 2020, compared with 2019, over 4 million fewer elective treatment pathways were completed. </p>       
 
   <!-- //// Figure 1 //// -->
 <div class="chart" id="figure1">
@@ -51,16 +53,42 @@
   </div>  
  
 <p> However,  this only tells part of the story. </p>   
-<h2> Comparing 2019 and 2020 patient patterns, there is a 6 million fall in new pathways started. </h2>
-<p> It is thought that during lockdown many patients who should have come forwards to seek medical attention did not. </p>
-
-  <!-- //// Figure 2 //// -->
+<h2> Drop in new pathways started. </h2>
+<p> Additionally, there was a sharp fall in the number of people starting new treatment pathways. In 2020, compared with 2019, almost 6 million new pathways were started. This can be thought of as the ‘missing patients’ as represents a key challenge in tackling the backlog caused by the pandemic.  </p>
+  
+    <!-- //// Figure 2 //// -->
 <div class="chart" id="figure2">
        <script>
          var myFigure2 = "[2]newpathways.json";
          vegaEmbed('#figure2', myFigure2);
       </script>
   </div>  
+    
+<h2> The effect varied significantly by CCG </h2>
+    <!-- //// Figure 3 //// -->
+<p> insert figure 3 </p>   
+
+<h2> People living in more deprived areas saw a larger fall in completed pathways </h2>
+    <!-- //// Figure 4 //// -->
+<div class="chart" id="figure4">
+       <script>
+         var myFigure4 = "[4]completedpcbyimd.json";
+         vegaEmbed('#figure4', myFigure4);
+      </script>
+  </div>  
+    
+<h2> ++ </h2>
+<p> This chart looks at the relationship between deprivation quintile (explanatory variable) and percentage change in completed pathways from April 2019 and April 2020 (dependent variable). </p>
+<p> The regressio result shows this relationship is statisically significant at a X% level and suggests that ++ </p>
+
+    
+    <!-- //// Figure 5 //// -->
+<div class="chart" id="figure5">
+       <script>
+         var myFigure4 = "[5]completeregression.json";
+         vegaEmbed('#figure5', myFigure5);
+      </script>
+  </div> 
   
   
 </body>
