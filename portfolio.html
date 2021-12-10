@@ -137,14 +137,21 @@
     
     
 <!-- //// Chart 9 //// -->
- <p>My ninth chart plots the depriviation of different neighbourhoods in Bristol - it illustrate the present disparity.</p>
+ <p> These charts plots two domains of deprivation (income and education) in Clifton and then Hartcliffe & Withywood. They illustrate the present disparity of deprivation in Bristol. The data is sourced from an API.</p>
     
-  <div class="chart" id="chart9">
+  <div class="chart" id="chart9a">
         <script>
-         var myChart9 = "chart9_IMDapi.json";
-         vegaEmbed('#chart9', myChart9);
+         var myChart9a = "chart9_cliftonapi.json";
+         vegaEmbed('#chart9a', myChart9a);
         </script>
-  </div>     
+  </div>   
+   
+      <div class="chart" id="chart9b">
+        <script>
+         var myChart9b = "chart9_hartcliffewithywoodapi.json";
+         vegaEmbed('#chart9b', myChart9b);
+        </script>
+  </div>  
     
     
 <h2 class="chart_head"> Week 5: Use a loop to embed 4 different charts from the same API. </h2>  
