@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+<!-- the title goes in the browser bar.-->
+    <title> Project</title>
+    
+        <link rel="stylesheet" href= "index.css">
+        <link rel="stylesheet" href="dashboard.css">
+        <link rel="icon" type="image/png" href="icon.png">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+
+  
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+<h1 class="web_name"> ROSIE NEVILLE DATA SCIENCE 2021 </h1>
+
+<a class="dashboardButton " href="index">Home</a>
+<a class="dashboardButton " href="project">Project</a>
+<a class="dashboardButton " href="portfolio">Portfolio</a>
+<a class="dashboardButton " href="https://github.com/rosieneville/rosieneville.github.io" >Github</a>  
+<a class="dashboardButton " href="https://rapidcharts.io/datascience" >Course</a>    
+    
+<h1 class="web_name"> My Project (demo)</h1>
+  
+<p> NHS waiting lists have long been a politically salient topic. In the Summer, an analysis published by the IFS found that more than 13 million patients may be awaiting treatment by July 2022. </p>
+<p> My project looks at the relationship between deprivation (as a proxy for socioeconomic status) and the pandemics effect on NHS waiting lists. <p>
+<h2> Unsurprisingly, as resources shifted toward coronavirus, the number of elective treatments fell. </h2>  
+
+  <!-- //// Figure 1 //// -->
+<div class="chart" id="figure1">
+       <script>
+         var myFigure1 = "[1]completepathway.json";
+         vegaEmbed('#figure1', myFigure1);
+      </script>
+  </div>  
+ 
+<p> However,  this only tells part of the story. </p>   
+<h2> Comparing 2019 and 2020 patient patterns, there is a 6 million fall in new pathways started. </h2>
+<p> It is thought that during lockdown many patients who should have come forwards to seek medical attention did not. </p>
+
+  <!-- //// Figure 2 //// -->
+<div class="chart" id="figure2">
+       <script>
+         var myFigure2 = "[2]newpathways.json";
+         vegaEmbed('#figure2', myFigure2);
+      </script>
+  </div>  
+  
+  
+</body>
+    
+</html>
