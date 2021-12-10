@@ -47,7 +47,6 @@
       "field": "c",
       "legend":{"title":"Political party", "orient": "top-left"},
       "type": "nominal",
-      "scale": {"range": ["navy", "#FF0000"]}
-    }
+      "scale": {"range": ["#3D3D90", "#F47174"]}    }
   }
 }
