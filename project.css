@@ -32,7 +32,14 @@ p{
 a{
     font-family: 'Poppins', sans-serif;
     color: rgb(5, 56, 107);
+    text-decoration:none;
 }
+
+a.text:hover{
+    color: rgb(237, 245, 225)
+        text-decoration:underline;
+}
+    
 
 .chart {
     background-color: rgb(92, 219, 149);
