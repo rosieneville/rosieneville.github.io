@@ -41,8 +41,8 @@
 <p> NHS waiting lists have long been a politically salient topic. In the Summer, an analysis published by the IFS found that <a class="text" href="https://ifs.org.uk/publications/15557"> more than 13 million patients may be awaiting treatment by July 2022</a>. </p>
 <p class="solid">The aim of my project is to investigate the relationship between deprivation and the pandemics effect on NHS waiting lists.</p>
     
-    
-<h3> Drop in elective treatments. </h3>  
+    <h2> The Pandemic led to a fall in both completed pathways and new pathways started. </h2>    
+<h3> ++ </h3>  
 <p> When the pandemic hit, a lot of planned elective care had to be postponed in order to deal with the pressures of coronavirus. This led to a sharp fall in completed pathways. In 2020, compared with 2019, over 4 million fewer elective treatment pathways were completed. </p>       
 
   <!-- //// Figure 1 //// -->
@@ -53,9 +53,8 @@
       </script>
   </div>  
  
-<p> However,  this only tells part of the story. </p>   
-<h2> Drop in new pathways started. </h2>
-<p> Additionally, there was a sharp fall in the number of people starting new treatment pathways. In 2020, compared with 2019, almost 6 million new pathways were started. This can be thought of as the ‘missing patients’ as represents a key challenge in tackling the backlog caused by the pandemic.  </p>
+<h2> Missing patients are not joining the NHS waiting list </h2>
+<p> Additionally, there was a sharp fall in the number of people starting new treatment pathways. In 2020, compared with 2019, almost 6 million fewer new pathways were started. This can be thought of as the ‘missing patients’ as represents a key challenge in tackling the backlog caused by the pandemic. If these ‘missing patients’ were now returning and seeking care, we would expect the number of new waiting list pathways to be substantially above 2019. </p>
   
     <!-- //// Figure 2 //// -->
 <div class="chart" id="figure2">
@@ -65,11 +64,10 @@
       </script>
   </div>  
     
-<h2> The effect varied significantly by CCG </h2>
-    <!-- //// Figure 3 //// -->
-<p> insert figure 3 </p>   
 
-<h2> People living in more deprived areas saw a larger fall in completed pathways </h2>
+
+<h2> The relationship with deprivation </h2>
+<h3> People living in more deprived areas saw a larger fall in completed pathways. </h3>
     <!-- //// Figure 4 //// -->
 <div class="chart" id="figure4">
        <script>
@@ -77,11 +75,13 @@
          vegaEmbed('#figure4', myFigure4);
       </script>
   </div>  
-    
-<h2> ++ </h2>
-<p> This chart looks at the relationship between deprivation quintile (explanatory variable) and percentage change in completed pathways from April 2019 and April 2020 (dependent variable). </p>
-<p> The regressio result shows this relationship is statisically significant at a X% level and suggests that ++ </p>
+    <p> 1 = the least deprived quintile </p>
+    <p> 5 = the most deprived quintile </p>
 
+    
+<h3> This relation is statically significant.</h3>
+<p> Figure 5 looks at the relationship between deprivation quintile (explanatory variable) and percentage change in completed pathways from April 2019 and April 2020 (dependent variable). </p>
+<p> The regression result shows this relationship is statistically significant at a 5% level. The result suggests that each further increase in deprivation quintile corresponds to a further -4.523% fall in completed pathways.</p>
     
     <!-- //// Figure 5 //// -->
 <div class="chart" id="figure5">
@@ -91,7 +91,20 @@
       </script>
   </div> 
   
-  
+<h2> The Data </h2>
+<p> The data analysed was drawn from two separate sources. </p>
+    <h3> Waiting time data </h3>
+    <p> The waiting time data is from consultant-led referral to treatment waiting times data for 2021/22 and 2020/21. Due to the repetitive nature of the website, I was able to use Python to scrape the data files. </p>
+    <p> There are 106 CCGs in England but 29 were dropped from the analysis either due to missing data or changes in CCGs’ geographics over reference period, leaving a sample of 77.  </p>
+    <h3> Deprivation data  </h3>
+    <p> The deprivation data is from the Ministry of Housing Communities and Local Government’s English indices of multiple deprivation API. The measure of deprivation takes account of income, employment, education, skills and training, among other factors. </p>
+ 
+    <p> ++ </p>
+
+<h2> Conclusion </h2>
+   <p> ++ </p>
+
+        
 </body>
     
 </html>
