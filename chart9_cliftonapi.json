@@ -27,13 +27,13 @@
       "field": "attributes.EduRank",
       "type": "quantitative",
       "title": "Education Rank",
-      "axis":{"tickCount": 10, "grid": false}
+      "axis":{"tickCount": 5, "grid": false}
     },
     "y": {
       "field": "attributes.IncRank",
       "type": "quantitative",
       "title": "Income Rank",
-      "axis":{"tickCount": 10, "grid": false}
+      "axis":{"tickCount": 5, "grid": false}
     },
 
 
