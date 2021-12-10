@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "LSOA IMD",
+  "height": 300,
+  "width": 280,
+ "title": {
+    "text": "Hartcliffe & Withywood",
+    "subtitle": "Index of Multiple Deprivation (IMD) Rank (1= most deprived)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://services3.arcgis.com/ivmBBrHfQfDnDf8Q/arcgis/rest/services/Indices_of_Multiple_Deprivation_(IMD)_2019/FeatureServer/0/query?where=lsoa11cd%20%3D%20'E01014726'%20OR%20lsoa11cd%20%3D%20'E01032514'%20OR%20lsoa11cd%20%3D%20'E01014727'%20OR%20lsoa11cd%20%3D%20'E01014593'%20OR%20lsoa11cd%20%3D%20'E01014594'%20OR%20lsoa11cd%20%3D%20'E01014597'%20OR%20lsoa11cd%20%3D%20'E01014516'%20OR%20lsoa11cd%20%3D%20'E01014596'%20OR%20lsoa11cd%20%3D%20'E01014595'%20OR%20lsoa11cd%20%3D%20'E01014517'%20OR%20lsoa11cd%20%3D%20'E01014515'%20OR%20lsoa11cd%20%3D%20'E01014600'&outFields=lsoa11cd,lsoa11nm,lsoa11nmw,LSOA01NM,IMD_Rank,IncRank,IncDec,EmpRank,EmpDec,EduRank,EduDec,HDDRank,HDDDec,CriRank,CriDec,TotPop,DepChi,Pop16_59,Pop60_,WorkPop,IMD_Decile,IMD_Rank&outSR=4326&f=json",
+    "format": {"type": "json", "property": "features"}
+  },
+
+  "mark":{
+    "type": "point",
+    "opacity": 1,
+    "color":"#F5CA7B",
+    "size": 200 },
+
+  "encoding": {
+    "x": {
+      "field": "attributes.EduRank",
+      "type": "quantitative",
+      "title": "Education Rank",
+      "axis":{"tickCount": 10, "grid": false}
+    },
+    "y": {
+      "field": "attributes.IncRank",
+      "type": "quantitative",
+      "title": "Income Rank",
+      "axis":{"tickCount": 10, "grid": false}
+    },
+
+
+    "tooltip": [
+          {"field": "attributes.lsoa11nm", 
+          "type": "nominal", 
+          "title": "LSOA"},
+          {"field": "attributes.lsoa11cd", 
+          "type": "nominal", 
+          "title": "LSOA code"},
+          {"field": "attributes.EduRank",
+            "type": "quantitative",
+            "title": "Education Rank" },
+          {"field": "attributes.IncRank",
+            "type": "quantitative",
+            "title": "Income Rank"},
+          {"field": "attributes.IMD_Rank",
+            "type": "quantitative",
+            "title": "IMD Rank"}
+        ]
+  }
+}
