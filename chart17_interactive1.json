@@ -8,8 +8,9 @@
     "anchor": "start",
     "color": "black"
   },
+  "height": 300,
   "width": 280,
-  "data": {
+    "data": {
     "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/%5B2%5Dnewpathways_total.csv"
   },
   "layer": [
@@ -47,7 +48,7 @@
       "encoding": {
         "x": {
           "field": "Month",
-           "title":null,
+          "title": null,
           "type": "ordinal",
           "sort": [
             "Jan",
@@ -63,7 +64,12 @@
             "Nov"
           ]
         },
-        "y": {"field": "NewReferrals", "type": "quantitative", "title":null},
+        "y": {
+          "field": "NewReferrals",
+           "type": "quantitative",
+            "title": null,
+                       "axis":{"tickCount": 5, "grid": false}
+            },
         "color": {
           "field": "Year",
           "type": "nominal",
@@ -81,5 +87,4 @@
       }
     }
   ]
-
 }
