@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "height": 300,
-  "width": 280,
+  "width": 380,
  "title": {
-      "text": "Figure 4",
-      "subtitle": "Percentage decrease in completed pathways by deprivation quintile",
+      "text": "Figure 4: % decrease in electives by deprivation quintile",
+      "subtitle": "Source: NHS Digital's RTT Waiting Times Data; MHCLG indices of deprivation 2019",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
