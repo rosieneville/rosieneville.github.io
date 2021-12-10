@@ -22,7 +22,7 @@
 
 "layer": [
   {        
-"mark": {"type": "line"},
+"mark": {"type": "line", "size":3},
 "encoding":{
     "x":{
         "field": "Month",
@@ -47,7 +47,7 @@
   },
 
   {
-"mark": {"type": "circle"},
+"mark": {"type": "circle", "size": 100, "opacity": 1},
 "encoding":{
     "x":{
         "field": "Month",
