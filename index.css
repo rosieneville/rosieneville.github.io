@@ -35,6 +35,12 @@ a{
     color: rgb(5, 56, 107);
 }
 
+.vega-bind-name{
+    color:white !important; 
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(92, 219, 149);
+}
+
 .chart {
     background-color: rgb(92, 219, 149);
 }
