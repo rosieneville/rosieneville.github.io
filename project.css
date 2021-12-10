@@ -36,10 +36,13 @@ a{
 }
 
 a.text:hover{
-    color: rgb(237, 245, 225)
-        text-decoration:underline;
+    color: rgb(237, 245, 225);
+    text-decoration:underline;
 }
     
+a.text:visited {
+	rgb(5, 56, 107);
+}
 
 .chart {
     background-color: rgb(92, 219, 149);
