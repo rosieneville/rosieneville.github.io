@@ -29,6 +29,11 @@ p{
     background-color: rgba(92, 219, 149, 0.9);
 }
 
+p.solid {
+    border-style: solid;
+    border-color: rgb(237, 245, 225)
+}
+
 a{
     font-family: 'Poppins', sans-serif;
     color: rgb(5, 56, 107);
