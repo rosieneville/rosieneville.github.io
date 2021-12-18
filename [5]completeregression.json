@@ -3,8 +3,8 @@
   "height": 400,
   "width": 380,
   "title": {
-    "text": "Figure 5",
-    "subtitle": "",
+    "text": "Figure 5: Relationship between deprivation and % change in completed pathways",
+    "subtitle": "Source: NHS Digital's RTT Waiting Times Data; MHCLG indices of deprivation 2019",    
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
