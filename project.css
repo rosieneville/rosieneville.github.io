@@ -23,6 +23,12 @@ h3{
     font-family: 'Poppins', sans-serif ;
 }
 
+.vega-bind-name{
+    color: rgb(5, 56, 107); 
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(92, 219, 149);
+}
+
 p{
     font-family: 'Poppins', sans-serif;
     color: rgb(5, 56, 107);
