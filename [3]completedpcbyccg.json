@@ -20,7 +20,7 @@
     "bind": {
     "input": "select",
     "options": [null, "1", "2", "3", "4", "5"],
-    "name": "Pick a deprivation quintile"}
+    "name": "Pick a deprivation quintile "}
   }
 }, 
 
