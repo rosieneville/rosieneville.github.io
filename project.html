@@ -36,12 +36,82 @@
 <a class="dashboardButton " href="https://github.com/rosieneville/rosieneville.github.io" >Github</a>  
 <a class="dashboardButton " href="https://rapidcharts.io/datascience" >Course</a>    
     
-<h1 class="web_name"> My Project </h1>
+<h1 class="web_name"> My Project (demo)</h1>
   
+<p> NHS waiting lists have long been a politically salient topic. In the Summer, an analysis published by the IFS found that <a class="text" href="https://ifs.org.uk/publications/15557"> more than 13 million patients may be awaiting treatment by July 2022</a>. </p>
+<p class="solid">The aim of my project is to investigate the relationship between deprivation and the pandemics effect on NHS waiting lists.</p>
     
-<div class="wrap">
-    <p> To see my draft project page, click <a class="text" href="projectdemo"> here</a>.</p> 
-</div>
+    <h2> The Pandemic led to a fall in both completed pathways and new pathways started. </h2>    
+<p> When the pandemic hit, a lot of planned elective care had to be postponed in order to deal with the pressures of coronavirus. This led to a sharp fall in completed pathways. In 2020, compared with 2019, over 4 million fewer elective treatment pathways were completed. </p>       
+
+  <!-- //// Figure 1 //// -->
+<div class="chart" id="figure1">
+       <script>
+         var myFigure1 = "[1]completepathway.json";
+         vegaEmbed('#figure1', myFigure1);
+      </script>
+  </div>  
+ 
+<h2> Missing patients are not joining the NHS waiting list </h2>
+<p> Additionally, there was a sharp fall in the number of people starting new treatment pathways. In 2020, compared with 2019, almost 6 million fewer new pathways were started. This can be thought of as the ‘missing patients’ who represents a big challenge in tackling the backlog caused by the pandemic. If these ‘missing patients’ were now returning and seeking care, we would expect the number of new waiting list pathways to be substantially above 2019. </p>
+  
+    <!-- //// Figure 2 //// -->
+<div class="chart" id="figure2">
+       <script>
+         var myFigure2 = "[2]newpathways.json";
+         vegaEmbed('#figure2', myFigure2);
+      </script>
+  </div>  
+    
+
+
+<h2> The relationship with deprivation </h2>
+      <!-- //// Figure 3 //// -->
+    <div class="chart" id="figure3">
+       <script>
+         var myFigure3 = "[3]completedpcbyccg.json";
+         vegaEmbed('#figure3', myFigure3);
+      </script>
+    </div> 
+    
+   <p> NB: 1 = the least deprived quintile and 5 = the most deprived quintile </p>
+<h3> People living in more deprived areas saw a larger fall in completed pathways. </h3>
+    <!-- //// Figure 4 //// -->
+<div class="chart" id="figure4">
+       <script>
+         var myFigure4 = "[4]completedpcbyimd.json";
+         vegaEmbed('#figure4', myFigure4);
+      </script>
+  </div>  
+  
+
+    
+<h3> This relation is statically significant.</h3>
+<p> Figure 5 looks at the relationship between deprivation quintile (explanatory variable) and percentage change in completed pathways from April 2019 and April 2020 (dependent variable). </p>
+<p> The regression result shows this relationship is statistically significant at a 5% level. The result suggests that each further increase in deprivation quintile corresponds to a 4.523 percentage point fall in completed pathways.</p>
+    
+    <!-- //// Figure 5 //// -->
+<div class="chart" id="figure5">
+       <script>
+         var myFigure5 = "[5]completeregression.json";
+         vegaEmbed('#figure5', myFigure5);
+      </script>
+  </div> 
+  
+<h2> The Data </h2>
+<p> The data analysed was drawn from two separate sources. </p>
+    <h3> Waiting time data </h3>
+<p> The waiting time data is from  <a class="text" href="https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/">  NHS consultant-led referral to treatment waiting times data </a>. Due to the repetitive nature of the website, I used loops in Python to obtain the data for each month and measure. </p>
+    <p> There are 106 CCGs in England but 29 were dropped from the analysis either due to missing data or changes in CCGs’ geographics over reference period, leaving a sample of 77.  </p>
+    <h3> Deprivation data  </h3>
+    <p> The deprivation data is from the  <a class="text" href="https://data-communities.opendata.arcgis.com/datasets/indices-of-multiple-deprivation-imd-2019-1/api">  Ministry of Housing Communities and Local Government’s English indices of multiple deprivation API </a>. The measure of deprivation takes account of income, employment, education, skills and training, among other factors. I used the deprivation data to create deprivation quintiles. </p>
+<p> </p>
+    
+    <p>By combing these two data sets I created, I was able to look at the waiting list stats by deprivation quinitles. The merging of these data set throw up some challenges because ++</p>
+
+<h2> Conclusion </h2>
+   <p> ++ </p>
+
         
 </body>
     
