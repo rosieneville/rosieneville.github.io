@@ -1,56 +1,50 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"width": 380,
+  "width": 380,
   "title": {
-      "text": "Figure 3: % decrease in electives by CCG",
-      "subtitle": "Source: NHS Digital's RTT Waiting Times Data; MHCLG indices of deprivation 2019",      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
- },
-
- "data": { 
+    "text": "Figure 3: % decrease in electives by CCG",
+    "subtitle": "Source: NHS Digital's RTT Waiting Times Data; MHCLG indices of deprivation 2019",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
     "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/%5B3%5Dcompletedpcbyccg.csv"
-},
-
-"selection": {
-  "Deprivation quintile":{
-    "type": "single",
-    "fields": ["imdquantile"],
-    "bind": {
-    "input": "select",
-    "options": [null, "1", "2", "3", "4", "5"],
-    "name": "Pick a deprivation quintile "}
-  }
-}, 
-
-"transform":[
-  {"filter": {
-    "field": "imdquantile",
-    "oneOf": ["1", "2", "3", "4", "5"]}},
-    {"filter": {"selection": "Deprivation quintile"}}   
-],
-
-"mark": {
-  "type": "bar",
-  "color": "rgb(5, 56, 107)"},
-"encoding":{
-  "y":{
-    "field":"ccgname",
-    "type": "nominal",
-    "title": null
   },
-  "x": {
-    "field":"value2",
-    "type": "quantitative",
-    "title": null
+  "selection": {
+    "Deprivation quintile": {
+      "type": "single",
+      "fields": ["imdquantile"],
+      "bind": {
+        "input": "select",
+        "options": [null, "1", "2", "3", "4", "5"],
+        "name": "Pick a deprivation quintile "
+      }
+    }
   },
-
-
+  "transform": [
+    {"filter": {"field": "imdquantile", "oneOf": ["1", "2", "3", "4", "5"]}},
+    {"filter": {"selection": "Deprivation quintile"}}
+  ],
+  "mark": {"type": "bar", "color": "rgb(5, 56, 107)"},
+  "encoding": {
+    "y": {"field": "ccgname", "type": "nominal", "title": null},
+    "x": {"field": "value2", "type": "quantitative", "title": null},
   "tooltip": [
-        {"field": "ccgname", "type": "nominal", "title": "CCG"},
-        {"field": "imdquantile", "type": "nominal", "title": "IMD quintile"},
-        {"field": "value", "type": "nominal", "title": "%change"}
-  ]
-}
+      {"field": "ccgname", "type": "nominal", "title": "CCG"},
+      {"field": "imdquantile", "type": "nominal", "title": "IMD quintile"},
+      {"field": "value", "type": "nominal", "title": "%change"}
+    ],
+
+     "color": {
+      "field": "imdquantile",
+      "type": "nominal",
+      "legend": null,
+      "scale": {"scheme": "blues", "reverse": true}
+    },
+    "tooltip": [
+      {"field": "imdquantile", "type": "nominal", "title": "imdquantile"},
+      {"field": "value2", "type": "quantitative", "title": "value"}]
+  }
 }
