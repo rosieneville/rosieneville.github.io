@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 400,
+  "width": 380,
+  "title": {
+    "text": "Figure 1: Number of completed pathways 2019-21",
+    "subtitle": "Source: NHS Digital's RTT Waiting Times Data.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/HousePrice6.csv"
+  },
+  
+  "layer": [
+    {
+      "mark": {"type": "line", "size": 3},
+      "selection": {
+     "region": {"type": "multi", "fields": ["Place"], "bind": "legend"}
+
+   },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": null
+        },
+        "y": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "color": {
+          "field": "Place",
+          "type": "nominal",
+          "scale": {"range": ["#FDFD96", "#F47174", "#93CAED"]},
+          "legend": {"orient": "bottom-right", "title": null}
+        },
+     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.2}  
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 100, "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal"
+        },
+        "y": {"field": "Price",
+         "type": "quantitative"},
+        "color": {
+          "field": "Place",
+          "type": "nominal",
+          "scale": {"range": ["#FDFD96", "#F47174", "#93CAED"]}
+        },
+     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.2},
+
+        "tooltip": [
+          {"field": "Date", "type": "temporal", "title": "Date"},
+          {"field": "Place", "type": "nominal", "title": "Location"},
+          {
+            "field": "Price",
+            "type": "quantitative",
+            "title": "Mean House Price Pathways"
+          }
+        ]
+      }
+    }
+  ]
+}
