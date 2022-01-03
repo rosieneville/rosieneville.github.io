@@ -32,8 +32,21 @@ p{
 
 a{
     font-family: 'Poppins', sans-serif;
-    color: rgb(5, 56, 107);
+    color: rgb(237, 245, 225);
+    text-decoration:none;
 }
+
+a.text:hover{
+    color: rgb(237, 245, 225);
+    text-decoration:underline;
+}
+    
+a.text:visited {
+	color: rgb(237, 245, 225);
+}
+
+a.text:active {
+	color: rgb(rgb(5, 56, 107)
 
 .vega-bind-name{
     color:white !important; 
