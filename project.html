@@ -106,7 +106,7 @@
 <p> When creating my cleaned data set, I had to drop 29 CCGs (out of 106) from the analysis either due to missing data or changes in CCGs’ geographics over the reference period, leaving a sample of 77. The sample is skewed towards non-London CCGs.  </p>
 
  <h3> Waiting time data </h3>
-<p> The waiting time data is from  <a class="text" href="https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/">  NHS consultant-led referral to treatment waiting times data </a>. Due to the repetitive nature of the website, I used loops in Python to obtain the data for each month and measure.  I then joined the data used pandas DataFrame with a for-loop in order to clean the data.</p>
+<p> The waiting time data is from  <a class="text" href="https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/">  NHS consultant-led referral to treatment waiting times data </a>. Due to the repetitive nature of the website, I used loops in Python to obtain the data for each month and measure.  I then joined the data and used pandas DataFrame with a for-loop in order to clean the data.</p>
 
  <h3> Deprivation data  </h3>
  	<p> The deprivation data is from the  <a class="text" href="https://data-communities.opendata.arcgis.com/datasets/indices-of-multiple-deprivation-imd-2019-1/api">  Ministry of Housing Communities and Local Government’s English indices of multiple deprivation API </a>. The measure of deprivation takes account of income, employment, education, skills and training, among other factors. I created the CCG level deprivation data by merging the LSOA level deprivation data with an LSOA-to-CCG lookup. I then used this to create deprivation quintiles  (using pctile command in stata). </p>
