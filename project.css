@@ -45,8 +45,9 @@ p.solid {
   border-color: rgb(237, 245, 225);
   margin-top: 20px;
   margin-bottom: 50px;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background: rgb(237, 245, 225);
 }
 
 a{
