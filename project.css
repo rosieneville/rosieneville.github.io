@@ -35,6 +35,11 @@ p{
     background-color: rgba(92, 219, 149, 0.9);
 }
 
+p.thick {
+  font-weight: bold;
+}
+
+
 p.solid {
   border-style: solid;
   border-color: rgb(237, 245, 225);
