@@ -46,7 +46,7 @@ p.solid {
 
 a{
     font-family: 'Poppins', sans-serif;
-    color: rgb(5, 56, 107);
+    color: rgb(237, 245, 225);
     text-decoration:none;
 }
 
@@ -56,8 +56,11 @@ a.text:hover{
 }
     
 a.text:visited {
-	rgb(5, 56, 107);
+	color: rgb(237, 245, 225);
 }
+
+a.text:active {
+	color: rgb(rgb(5, 56, 107)
 
 .chart {
     background-color: rgb(92, 219, 149);
