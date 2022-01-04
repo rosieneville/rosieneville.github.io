@@ -39,6 +39,11 @@ p.thick {
   font-weight: bold;
 }
 
+p.emphasized {
+  font-style: italic; 
+}
+
+
 
 p.solid {
   border-style: solid;
