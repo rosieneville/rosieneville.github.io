@@ -113,12 +113,14 @@
 
 
 <h2> Challenges </h2>
-<p>By combing these two data sets I created, I was able to look at the waiting list stats by deprivation quintile. The merging of these data set threw up some challenges because ++</p>
-
-   <img src="cleaningExample.png" style="width:600px;height:162px;">
-   <img src="mergingExample.png" style="width:600px;">
-
+    <p> By combining these two data sets, I was able to look at the waiting list data by deprivation quintile. However, the merging of these data sets threw up some challenges. The deprivation data was at the LSOA level, whereas the waiting list data was at the CCG level. This meant the data sets could not be merged without first altering them. I found a lookup online which meant I could transform the deprivation data to be at the CCG level. However, I first had to alter the lookup file as the format of the variable <span class="emphasized">CCGName</span> did not match that of the waiting list data. I used pandas DataFrame to convert all CCGs names to their capitalised version which included ‘ CCG’. </p>
+    <img src="cleaningExample.png" style="width:600px;height:162px;">
     
+    <p> I then merged the deprivation data with the edited lookup file. I then average the deprivation rank by CCG. I then merged this with the waiting list data. From this, I created deprivation quintiles by CCG. </p>
+    <img src="mergingExample.png" style="width:600px;">
+    
+    <p> It was only at the time point I started to drop CCGs either due to missing data or changes in CCGs’ geography over the reference period. I ended up having to drop 29 CCGs (out of 106) from the analysis, leaving a sample of 77 CCGs. </p>
+
 <h2> Conclusion</h2>
 <p> On average, completed pathways fell by more than half (58%) in the most deprived areas, compared to around a third (38%) in the least deprived areas. The national average was 42%. </p>
      
