@@ -40,7 +40,7 @@
      "color": {
       "field": "imdquantile",
       "type": "nominal",
-      "legend": null,
+      "legend": {"orient": "top"},
       "scale": {"scheme": "blues", "reverse": true}
     },
     "tooltip": [
