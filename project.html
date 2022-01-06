@@ -38,7 +38,7 @@
     
 <h1 class="web_name"> My Project</h1>
   
- 	<p> NHS waiting lists have long been a politically salient topic. In the Summer, an analysis published by the IFS found that   <a class="text" href="https://ifs.org.uk/publications/15557">  more than 13 million patients may be awaiting treatment by July 2022 </a>. </p>
+ 	<p> NHS waiting lists have long been a politically salient topic. In the Summer, an analysis published by the IFS found that   <a class="text" href="https://ifs.org.uk/publications/15557">  more than 13 million patients may be awaiting treatment by July 2022</a>. </p>
     <p class="solid"> The aim of my project is to investigate the relationship between a place's deprivation and the pandemics effect on its NHS waiting lists.  </p>
   
 <h2> The Pandemic led to a fall in both completed pathways and new pathways started. </h2> 
@@ -67,7 +67,7 @@
 
 <h2> The relationship with deprivation </h2>
 <p>  Figure 3 shows the percentage decrease in completed pathways from April 2019 to April 2020. You can group CCGs by their deprivation quintile. </p>
-<p class="thick"> 1 represents least deprived CCGs and 5 represents the most deprived.  </p>
+<p class="thick"> 1 represents the least deprived CCGs and 5 represents the most deprived.  </p>
 
  <!-- //// Figure 3 //// -->
     <div class="chart" id="figure3">
@@ -106,10 +106,10 @@
 <p> The data analysed was drawn from two separate sources. </p>
 
  <h3> Waiting time data </h3>
-<p> The waiting time data is from  <a class="text" href="https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/">  NHS consultant-led referral to treatment waiting times data </a>. Due to the repetitive nature of the website, I used loops in Python to obtain the data for each month and measure.  I then joined the data and used pandas DataFrame with a for-loop in order to clean the data.</p>
+<p> The waiting time data is from  <a class="text" href="https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/">  NHS consultant-led referral to treatment waiting times data</a>. Due to the repetitive nature of the website, I used loops in Python to obtain the data for each month and measure.  I then joined the data and used pandas DataFrame with a for-loop in order to clean the data.</p>
 
  <h3> Deprivation data  </h3>
- 	<p> The deprivation data is from the  <a class="text" href="https://data-communities.opendata.arcgis.com/datasets/indices-of-multiple-deprivation-imd-2019-1/api">  Ministry of Housing Communities and Local Government’s English indices of multiple deprivation API </a>. The measure of deprivation takes account of income, employment, education, skills and training, among other factors. I created the CCG level deprivation data by merging the LSOA level deprivation data with an LSOA-to-CCG lookup. I then used this to create deprivation quintiles  (using pctile command in stata). </p>
+ 	<p> The deprivation data is from the  <a class="text" href="https://data-communities.opendata.arcgis.com/datasets/indices-of-multiple-deprivation-imd-2019-1/api">  Ministry of Housing Communities and Local Government’s English indices of multiple deprivation API</a>. The measure of deprivation takes account of income, employment, education, skills and training, among other factors. I created the CCG level deprivation data by merging the LSOA level deprivation data with an LSOA-to-CCG lookup. I then used this to create deprivation quintiles  (using pctile command in stata). </p>
 
 
 <h2> Challenges </h2>
@@ -123,7 +123,7 @@
 
 <h2> Conclusion</h2>
 <p> On average, completed pathways fell by more than half (58%) in the most deprived areas, compared to around a third (38%) in the least deprived areas. The national average was 42%. </p>
-<p> One of the founding princples of the NHS was that care should be based on clinical need, not someone's income, education, postcode or ethnicity. As we know more deprived areas often have higher clinical needs, my results suggest that this aim is not being realised </p>
+<p> One of the founding principles of the NHS was that care should be based on clinical need, not someone's income, education, postcode or ethnicity. As we know more deprived areas often have higher clinical needs, my results suggest that this aim is not being realised. </p>
     
 </body>
     
