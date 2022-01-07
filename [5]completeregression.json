@@ -22,7 +22,7 @@
           "field": "imdquantile",
           "type": "quantitative",
           "title": "Deprivation Quintile",
-          "axis": { "grid": true, "titleFontSize": 9}
+          "axis": { "grid": true, "titleFontSize": 9, "tickCount": 5}
         },
         "y": {
           "field": "value",
