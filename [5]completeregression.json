@@ -43,7 +43,7 @@
             "title": "IMD quintile"},
           {"field": "value",
             "type": "quantitative",
-            "title": "Value" },
+            "title": "Percentage change" },
           {"field": "Region",
             "type": "nominal",
             "title": "Region" }
