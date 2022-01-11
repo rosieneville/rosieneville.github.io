@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 400,
-  "width": max-width,
+  "width": 380,
   "title": {
     "text": "Figure 1: Number of completed pathways 2019-21",
     "subtitle": "Source: NHS Digital's RTT Waiting Times Data.",
