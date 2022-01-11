@@ -31,20 +31,16 @@
   "encoding": {
     "y": {"field": "ccgname", "type": "nominal", "title": null},
     "x": {"field": "value2", "type": "quantitative", "title": null},
-  "tooltip": [
+    "tooltip": [
       {"field": "ccgname", "type": "nominal", "title": "CCG"},
       {"field": "imdquantile", "type": "nominal", "title": "IMD quintile"},
-      {"field": "value", "type": "nominal", "title": "%change"}
+      {"field": "value2", "type": "quantitative", "title": "Percentage decrease"}
     ],
-
-     "color": {
+    "color": {
       "field": "imdquantile",
       "type": "nominal",
       "legend": {"orient": "top"},
       "scale": {"scheme": "blues", "reverse": true}
-    },
-    "tooltip": [
-      {"field": "imdquantile", "type": "nominal", "title": "imdquantile"},
-      {"field": "value2", "type": "quantitative", "title": "value"}]
+    }
   }
 }
