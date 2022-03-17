@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "NHS New Referrals",
+    "subtitle": "Number of patients who started new care pathways",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 1000,
+  "width": 1000,
+  "data": {
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/HousePriceData.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "selection": {
+        "region": {"type": "multi", "fields": ["Year"], "bind": "legend"}
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "ordinal"
+        },
+        "y": {"field": "NewReferrals", "type": "quantitative"},
+        "color": {
+          "field": "Year",
+          "type": "nominal",
+          "scale": {"scheme": "set1"},
+          "legend": {"orient": "bottem", "title": null}
+        },
+        "opacity": {
+          "condition": {"selection": "region", "value": 1},
+          "value": 0.1
+        }
+      }
+    },
+    
+  ]
+}
