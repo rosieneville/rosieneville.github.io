@@ -11,7 +11,7 @@
   "height": 1000,
   "width": 1000,
   "data": {
-    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/HousePriceData.csv"
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/ONSUWG/HousePriceData.csv"
   },
   "layer": [
     {
