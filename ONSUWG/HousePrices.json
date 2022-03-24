@@ -1,17 +1,20 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "NHS New Referrals",
-    "subtitle": "Number of patients who started new care pathways",
+    "text": "House Prices Over Time of Non-Tourist Locations",
+    "fontSize": 20,
+    "subtitle": "source: https://landregistry.data.gov.uk/app/ppd/",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-  "height": 1000,
+
+  "height": 500,
+
   "width": 1000,
   "data": {
-    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/ONSUWG/HousePriceData.csv"
+    "url": "https://raw.githubusercontent.com/rosieneville/rosieneville.github.io/main/ONSUWG/HousePriceDataNonTouristy.csv"
   },
   "layer": [
     {
@@ -23,13 +26,15 @@
         "x": {
           "field": "Date",
           "type": "ordinal"
+          
         },
-        "y": {"field": "NewReferrals", "type": "quantitative"},
+        "y": {"field": "NewReferrals", "type": "quantitative", 
+        "title": "House Prices (£)"},
         "color": {
           "field": "Year",
           "type": "nominal",
           "scale": {"scheme": "set1"},
-          "legend": {"orient": "bottem", "title": null}
+          "legend": {"orient": "left", "title": null}
         },
         "opacity": {
           "condition": {"selection": "region", "value": 1},
